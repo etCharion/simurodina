@@ -829,6 +829,8 @@
             balanceDetail.textContent = Math.round(balance).toLocaleString('cs-CZ');
             balanceDetail.classList.remove('text-green-600', 'text-red-600');
             balanceDetail.classList.add(balance >= 0 ? 'text-green-600' : 'text-red-600');
+            budgetData.balance = balance;
+            checkFormValidity();
         }
 
         // Event Listeners
