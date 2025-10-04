@@ -546,7 +546,7 @@
                 }
             });
 
-            if (allSingleSelected) {
+            if (allSingleSelected && budgetData.balance >= 0) {
                 evaluateButton.disabled = false;
                 evaluateButton.classList.remove('disabled-button');
                 evaluateButton.classList.add('hover:bg-indigo-700');
